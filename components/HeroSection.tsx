@@ -1,6 +1,5 @@
 "use client";
 
- 
 
 export default function Hero({backgroundImage} : {backgroundImage : string}) {
   console.log(backgroundImage)
