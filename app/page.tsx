@@ -9,7 +9,7 @@ export default async function Home() {
     const response = await prisma.heroSection.findFirst(
       {where: { isActive : true} as any}
     );
-    console.log('db respoinse', response)
+     
     if (response?.imageUrl) backgroundImage = response?.imageUrl;
   } catch (err) {
     backgroundImage = "";
