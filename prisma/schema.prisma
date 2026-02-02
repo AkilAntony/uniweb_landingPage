@@ -8,8 +8,10 @@ datasource db {
 }
 
 model HeroSection {
-  id       Int    @id @default(autoincrement())
-  imageUrl String @map("image_url")
+  id        Int      @id @default(autoincrement())
+  imageUrl  String
+  isActive  Boolean  @default(false)
+  createdAt DateTime @default(now())
 
   @@map("hero_section")
 }

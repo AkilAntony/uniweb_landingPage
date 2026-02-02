@@ -2,7 +2,7 @@
 
 
 export default function Hero({backgroundImage} : {backgroundImage : string}) {
-  console.log(backgroundImage)
+   
   return (
     <div
       className="min-h-screen bg-cover "
